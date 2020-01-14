@@ -1,0 +1,5 @@
+video refrencia: 
+-Instlacion laravel collective
+-caffeinated/shinobi  =>para sministrar los pernmisos
+
+https://www.youtube.com/watch?v=gHvecXNv3S4&list=PLhCiuvlix-rSgQNLIl7Qg2KbQni3fz-ea&index=2
