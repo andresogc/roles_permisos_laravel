@@ -33,6 +33,21 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        @can('products.index')
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('products.index')}}">Products</a>
+                        </li>
+                        @endcan
+                        @can('users.index')
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('products.index')}}">Users</a>
+                        </li>
+                        @endcan
+                        @can('roles.index')
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('products.index')}}">Roles</a>
+                        </li>
+                        @endcan
 
                     </ul>
 
@@ -71,7 +86,18 @@
                 </div>
             </div>
         </nav>
+        @if (session('info'))
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="alert alert-success">
+                            {{session('info')}}
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        @endif
         <main class="py-4">
             @yield('content')
         </main>
