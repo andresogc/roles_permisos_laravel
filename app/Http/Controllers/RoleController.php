@@ -10,6 +10,10 @@ use Caffeinated\Shinobi\Models\Permission;
 class RoleController extends Controller
 {
     public function index(){
+        $editpermissions = auth()->user()->hasPermissionTo('roles.show');
+        $permisos = auth()->user()->permissions;
+      //  dd( $editpermissions);
+       // dd( $permisos);
         $roles = Role::paginate();
 
         return view('roles.index', compact('roles'));
