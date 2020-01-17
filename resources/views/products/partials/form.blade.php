@@ -4,7 +4,7 @@
 </div>
 
 <div class="form-group">
-    {{Form::label('description', 'Nombre del producto')}}
+    {{Form::label('description', 'Descripciòn del producto')}}
     {{Form::text('description',null , ['class' => 'form-control'])}}
 </div>
 

@@ -22,9 +22,9 @@ class ProductController extends Controller
     }
 
 
-    public function store(Request $reques){
+    public function store(Request $request){
 
-        $product = product::create($request->all());
+        $product = Product::create($request->all());
 
         return redirect()->route('products.edit', $product->id)->with('info', 'Producto guardado con exito');
 
