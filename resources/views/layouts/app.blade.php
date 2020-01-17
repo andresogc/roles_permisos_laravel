@@ -40,12 +40,12 @@
                         @endcan
                         @can('users.index')
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('products.index')}}">Users</a>
+                            <a class="nav-link" href="{{route('users.index')}}">Users</a>
                         </li>
                         @endcan
                         @can('roles.index')
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('products.index')}}">Roles</a>
+                            <a class="nav-link" href="{{route('roles.index')}}">Roles</a>
                         </li>
                         @endcan
 

@@ -76,31 +76,31 @@ class PermissionsTableSeeder extends Seeder
              //Productos
             [
                 'name' => 'Navegar productos',
-                'slug' => 'productos.index', //productos es el nombre del moduklo, index es la pagina principla del modulo
+                'slug' => 'products.index', //productos es el nombre del moduklo, index es la pagina principla del modulo
                 'description' => 'Lista y navega todos los productos del sistema',
                 'created_at' => date('Y-m-d H:i:s')
             ],
             [
                 'name' => 'Ver detalle de producto',
-                'slug' => 'productos.show', //productos es el nombre del moduklo, index es la pagina principla del modulo
+                'slug' => 'products.show', //productos es el nombre del moduklo, index es la pagina principla del modulo
                 'description' => 'Ver en detalle cada producto del sistema',
                 'created_at' => date('Y-m-d H:i:s')
             ],
             [
                 'name' => 'Creacion de productos',
-                'slug' => 'productos.create', //productos es el nombre del moduklo, index es la pagina principla del modulo
+                'slug' => 'products.create', //productos es el nombre del moduklo, index es la pagina principla del modulo
                 'description' => 'Editar cualquier dato de un producto del sistema',
                 'created_at' => date('Y-m-d H:i:s')
             ],
             [
                 'name' => 'Edición productos',
-                'slug' => 'productos.edit', //productos es el nombre del moduklo, index es la pagina principla del modulo
+                'slug' => 'products.edit', //productos es el nombre del moduklo, index es la pagina principla del modulo
                 'description' => 'Editar cualquier dato de un producto del sistema',
                 'created_at' => date('Y-m-d H:i:s')
             ],
             [
                 'name' => 'Eliminar producto',
-                'slug' => 'productos.destroy', //productos es el nombre del moduklo, index es la pagina principla del modulo
+                'slug' => 'products.destroy', //productos es el nombre del moduklo, index es la pagina principla del modulo
                 'description' => 'Elimina cualquier producto del sistema',
                 'created_at' => date('Y-m-d H:i:s')
             ]

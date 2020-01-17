@@ -66,15 +66,15 @@ Route::middleware(['auth'])->group(function() {
     // users.
   Route::get('users', 'UserController@index')->name('users.index');
 
-  Route::put('users/{role}', 'UserController@update')->name('users.update');
+  Route::put('users/{user}', 'UserController@update')->name('users.update');
 
-  Route::get('users/{role}', 'UserController@show')->name('users.show');
-
-
-  Route::delete('users/{role}', 'UserController@destroy')->name('users.destroy');
+  Route::get('users/{user}', 'UserController@show')->name('users.show');
 
 
-  Route::get('users/{role}/edit', 'UserController@edit')->name('users.edit')
+  Route::delete('users/{user}', 'UserController@destroy')->name('users.destroy');
+
+
+  Route::get('users/{user}/edit', 'UserController@edit')->name('users.edit')
     ;
 });
 

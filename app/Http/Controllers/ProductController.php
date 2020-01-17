@@ -31,7 +31,7 @@ class ProductController extends Controller
     }
 
     public function show(Product $product){
-        
+
         return view('products.show', compact('product'));;
 
     }
@@ -46,7 +46,7 @@ class ProductController extends Controller
 
     public function update(Request $request, Product $product){
 
-        $product->update($reques->all());
+        $product->update($request->all());
 
         return redirect()->route('products.edit', $product->id)->with('info', 'Producto actualizado con exito');
 
